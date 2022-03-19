@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Case Study Project: Google Lens VS MobileNet</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+      <ol>
+        <div class = "test_image_and_result col-xs-12">
+          <li class = "col-sm-4 col-xs-12">
+            <b>Test Image -</b>
+            <img src = "IMG_0726.jpg" class = "img-responsive">
+          </li>
+          <h5 class = "col-sm-4 col-xs-12">
+            Output on <b>Google Lens</b>
+            <span> Bottle</span>
+          </h5>
+          <h5 class = "col-sm-4 col-xs-12">
+          Output on <b>MobileNet Model</b>
+          <span>Container</span>
+          </h5>
+          <div class = "mini-result" class = "col-xs-12">
+            <h4> Result - </h4>
+            <hr>
+            <h4> Google Lens wins Round 1</h4>
+          </div>
+
+
+
+        <div class = "test_image_and_result col-xs-12">
+          <li class = "col-sm-4 col-xs-12">
+          <b>Test Image - </b>
+          <img src = "IMG_0727 (1).jpg" class = "img-responsive">
+        </li>
+
+        <h5 class = "col-sm-4 col-xs-12">
+          Output on <b>Google Lens</b>
+          <span> Mechanical Pencil</span>
+        </h5>
+        <h5 class = "col-sm-4 col-xs-12">
+          Output on <b>MobileNet</b>
+          <span>Pencil</span>
+        </h5>
+        <div class = "mini-result" class = "col-xs-12">
+
+          <h4>Result - </h4>
+          <hr>
+          <h4>MobileNet wins</h4>
+        </div>
+      </div>
+      <div class = "test_image_and_result col-xs-12">
+        <li class = "col-sm-4 col-xs-12">
+          <b>Test Image -</b>
+          <img src = "IMG_0728 (1).jpg" class = "img-responsive">
+        </li>
+        <h5 class = "col-sm-4 col-xs-12">
+          Output on <b>Google Lens</b>
+          <span> Eraser</span>
+        </h5>
+        <h5 class = "col-sm-4 col-xs-12">
+        Output on <b>MobileNet Model</b>
+        <span>Eraser</span>
+        </h5>
+        <div class = "mini-result" class = "col-xs-12">
+          <h4> Result - </h4>
+          <hr>
+          <h4> Tie </h4>
+        </div>
+      <div>
+
+        <div class = "test_image_and_result col-xs-12">
+          <li class = "col-sm-4 col-xs-12">
+            <b>Test Image -</b>
+            <img src = "IMG_0729 (1).jpg" class = "img-responsive">
+          </li>
+          <h5 class = "col-sm-4 col-xs-12">
+            Output on <b>Google Lens</b>
+            <span> Glue stick</span>
+          </h5>
+          <h5 class = "col-sm-4 col-xs-12">
+          Output on <b>MobileNet Model</b>
+          <span>Lipstick</span>
+          </h5>
+          <div class = "mini-result" class = "col-xs-12">
+            <h4> Result - </h4>
+            <hr>
+            <h4>Google Lens wins</h4>
+          </div>
+
+
+          <div class = "test_image_and_result col-xs-12">
+            <li class = "col-sm-4 col-xs-12">
+              <b>Test Image -</b>
+              <img src = "IMG_0731 (1).jpg" class = "img-responsive">
+            </li>
+            <h5 class = "col-sm-4 col-xs-12">
+              Output on <b>Google Lens</b>
+              <span> A spoon</span>
+            </h5>
+            <h5 class = "col-sm-4 col-xs-12">
+            Output on <b>MobileNet Model</b>
+            <span>Spoon</span>
+            </h5>
+            <div class = "mini-result" class = "col-xs-12">
+              <h4> Result - </h4>
+              <hr>
+              <h4>Tie</h4>
+            </div>
+          <div>
+            
+          
+            <div class = "test_image_and_result col-xs-12">
+              <li class = "col-sm-4 col-xs-12">
+                <b>Test Image -</b>
+                <img src = "IMG_0737 (1).jpg" class = "img-responsive">
+              </li>
+              <h5 class = "col-sm-4 col-xs-12">
+                Output on <b>Google Lens</b>
+                <span> Napkin</span>
+              </h5>
+              <h5 class = "col-sm-4 col-xs-12">
+              Output on <b>MobileNet Model</b>
+              <span>napkin</span>
+              </h5>
+              <div class = "mini-result" class = "col-xs-12">
+                <h4> Result - </h4>
+                <hr>
+                <h4>Tie. They both got the object wrong. It was supposed to be wet wipes.</h4>
+              </div>
+            <div>
+
+
+              <div class = "test_image_and_result col-xs-12">
+                <li class = "col-sm-4 col-xs-12">
+                  <b>Test Image -</b>
+                  <img src = "IMG_0738 (2).jpg" class = "img-responsive">
+                </li>
+                <h5 class = "col-sm-4 col-xs-12">
+                  Output on <b>Google Lens</b>
+                  <span>Goggle</span>
+                </h5>
+                <h5 class = "col-sm-4 col-xs-12">
+                Output on <b>MobileNet Model</b>
+                <span> Mask</span>
+                </h5>
+                <div class = "mini-result" class = "col-xs-12">
+                  <h4> Result - </h4>
+                  <hr>
+                  <h4>MobileNet wins</h4>
+                </div>
+              <div>
+
+                <div class = "test_image_and_result col-xs-12">
+                  <li class = "col-sm-4 col-xs-12">
+                    <b>Test Image -</b>
+                    <img src = "IMG_0739 (1).jpg" class = "img-responsive">
+                  </li>
+                  <h5 class = "col-sm-4 col-xs-12">
+                    Output on <b>Google Lens</b>
+                    <span> Mouse</span>
+                  </h5>
+                  <h5 class = "col-sm-4 col-xs-12">
+                  Output on <b>MobileNet Model</b>
+                  <span>Mouse</span>
+                  </h5>
+                  <div class = "mini-result" class = "col-xs-12">
+                    <h4> Result - </h4>
+                    <hr>
+                    <h4>Tie</h4>
+                  </div>
+                <div>
+
+
+                  <div class = "test_image_and_result col-xs-12">
+                    <li class = "col-sm-4 col-xs-12">
+                      <b>Test Image -</b>
+                      <img src = "IMG_0740 (1).jpg" class = "img-responsive">
+                    </li>
+                    <h5 class = "col-sm-4 col-xs-12">
+                      Output on <b>Google Lens</b>
+                      <span>Hole Punch</span>
+                    </h5>
+                    <h5 class = "col-sm-4 col-xs-12">
+                    Output on <b>MobileNet Model</b>
+                    <span>Stapler</span>
+                    </h5>
+                    <div class = "mini-result" class = "col-xs-12">
+                      <h4> Result - </h4>
+                      <hr>
+                      <h4>MobileNet wins</h4>
+                    </div>
+                  <div>
+      
+                    <div class = "test_image_and_result col-xs-12">
+                      <li class = "col-sm-4 col-xs-12">
+                        <b>Test Image -</b>
+                        <img src = "IMG_0741 (1).jpg" class = "img-responsive">
+                      </li>
+                      <h5 class = "col-sm-4 col-xs-12">
+                        Output on <b>Google Lens</b>
+                        <span>Marker</span>
+                      </h5>
+                      <h5 class = "col-sm-4 col-xs-12">
+                      Output on <b>MobileNet Model</b>
+                      <span>Marker</span>
+                      </h5>
+                      <div class = "mini-result" class = "col-xs-12">
+                        <h4> Result - </h4>
+                        <hr>
+                        <h4>Tie</h4>
+                      </div>
+                      <h2>I have counted all the scores for Google Lens and MobileNet, and come to the conclusion on who wins. </h2>
+                      <h3>THE WINNER IS..<b>Nobody.</b></h3>
+                      <h3>It's a tie.</h3>
+                      <h4>So they both won and lost.</h4>
+        </ol>
+    </body>
+</html>
